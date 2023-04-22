@@ -27,5 +27,18 @@ function onClickInductor() {
 }
 
 function onClickTransistor() {
-  alert("Пока не реализованно")
+    let Ik = prompt("Введите величину тока на коллекторе", 0)
+    Ik = Number(Ik)
+    let Ib = prompt("Введите величину тока базы", 0)
+    Ib = Number(Ib)
+    if (Ik == 0 || Ib == 0 || isNaN(Ik) || isNaN(Ib) ){
+        alert("Некоректные данные")
+        return
+    }
+    let B = +(Ik/Ib).toFixed(2)
+    if(B < 1){
+        alert("Коэффициент усиления очень мал, некоректные данные")
+        return
+    }
+    alert("Коэффициент усиления при текущих параметрах цепи равен " + B)
 }
