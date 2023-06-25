@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link rel="shortcut icon" href="favicon.png" type="image/png">
+ <script src="app.js"></script>
+ <link rel="stylesheet" href="style.css">
+ <title>Расчет элементов</title>
+ </head>
+ <body style="background-color: #008080">
+      <button type="button" onclick="onClickResistor()"><img
+src="resistor.png"></button>
+ <button type="button" onclick="onClickSvetodiod()"><img
+src="capacitor.png"></button>
+ <button type="button" onclick="onClickInductor()"><img
+src="inductor.png"></button>
+ <button type="button" onclick="onClickTransistor()"><img
+src="transistor.png"></button>
+ <br><button type="button" onclick="onClickRead()" class=B_Text>Чтение
+параметров элементов из файла</button>
+ <button type="button" onclick="onClickAuto()"
+id="Calc"class=B_Text>Рассчет элементов по данным из файла</button>
+ <button type="button" onclick="onClickPrint()" id="Print"
+class=B_Text>Сохранение рассчитанных данных в файл</button><br>
+ <div id ="first">
+ <p id="in_first"></p>
+ <input id="first_in"><br>
+ </div><br>
+ <div id="second">
+ <p id="in_second"></p>
+ <input id="second_in"><br>
+ </div><br>
+ <div id="but"><button type="button" onclick="chose()" id="Transist"
+class=B_Text>Вычислить</button></div><br>
+ <div class="OUT_Box" id="OUT_B"><output id="OUT"></output></div>
+ <input type="file" id="fls" onchange="readFile(this)">
+ <p id="fls_t"></p>
+
+ </body>
+</html>

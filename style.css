@@ -1,0 +1,72 @@
+body{
+ margin: 0px;
+}
+
+img{
+ width: 100px;
+ height: 100px;
+ padding: 0px;
+ margin: 0px;
+}
+
+button{
+ width: 150px;
+ height:110px;
+ padding: 0px;
+ margin: 0px;
+ -webkit-filter: brightness(100%);
+}
+
+.B_Text{
+ font-size: 20px;
+}
+
+#Print{
+ font-size: 21px;
+ display: none;
+}
+
+#Calc{
+ display: none;
+}
+
+#first{
+ display: none;
+}
+
+#second{
+ display: none;
+}
+
+#fls{
+ display: none;
+}
+
+#fls_t{
+ display: none;
+}
+
+#but{
+ display: none;
+}
+
+p{
+ font-size: 20px;
+}
+
+output{
+ font-size: 24px;
+}
+
+.OUT_Box{
+ width: 630px;
+ min-height: 110px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+button:hover{
+ -webkit-filter: brightness(85%);
+}
